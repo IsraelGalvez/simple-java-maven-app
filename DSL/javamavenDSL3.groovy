@@ -49,7 +49,7 @@ job('Java Maven App DSL 3') {
 job('Job test Hola Mundo') {
 	description('Aplicacion Hola Mundo de Prueba')
 	triggers {
-		cron('H/1****')
+		cron('H/1 * * * *')
     		githubPush()
    	}
 	steps {
